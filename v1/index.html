@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ASCII Tool v1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h2>ASCII TOOL v1</h2>
+
+    <label>Upload image / video</label><br>
+    <input type="file" id="fileInput" accept="image/*,video/*">
+    <br><br>
+
+    <label>Fit Mode:</label><br>
+    <select id="fitMode">
+      <option value="fill">Fill (cover & crop)</option>
+      <option value="contain">Contain (distort)</option>
+    </select>
+    <br><br>
+
+    <label><input type="checkbox" id="invert"> Invert</label><br><br>
+    <label><input type="checkbox" id="bgToggle" checked> Show background</label><br><br>
+
+    <label>Contrast</label><br>
+    <input type="range" id="contrastSlider" min="0.5" max="3" step="0.1" value="1.2">
+    <br><br>
+
+    <label>Font Size</label><br>
+    <input type="range" id="fontSlider" min="6" max="40" value="12">
+    <br><br>
+
+    <button id="savePngBtn">Save PNG (transparent)</button><br><br>
+    <button id="saveTxtBtn">Save TXT</button>
+  </div>
+
+  <div id="canvas-container"></div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>

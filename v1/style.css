@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  background: #f0f0f0;
+  padding: 15px;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#canvas-container {
+  margin-left: 260px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas-container canvas {
+  height: 100%;
+  width: auto;
+  display: block;
+}
